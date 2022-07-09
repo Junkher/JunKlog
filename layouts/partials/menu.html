@@ -1,0 +1,5 @@
+<div class="flex justify-between max-w-xl cursor-pointer text-gray-500 text-lg py-2">   
+  {{range .Site.Menus.main}}
+      <a href="{{.URL}}"> {{ .Name}} </a>
+  {{end}}
+</div>

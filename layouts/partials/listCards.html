@@ -1,0 +1,24 @@
+<div class="min-h-screen flex flex-wrap z-0">
+
+  {{ range .Pages.ByPublishDate.Reverse }}
+
+    <div class="card w-64 h-80 bg-base-100 shadow-xl mr-7 mt-7">
+
+      <figure class="px-10 pt-10">
+        <img src="https://placeimg.com/400/225/arch" alt="Nothing" class="rounded-xl" />
+      </figure>
+      <a href="{{.RelPermalink}}">
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">{{.Title}}</h2>
+        <p>{{.Description}}</p>
+      </div>
+      </a>
+    </div>
+  {{ end }}
+
+{{/*  <ul>
+    {{ range .Pages.ByPublishDate.Reverse }}
+      <li><a href="{{.RelPermalink}}"> {{.Title}} </a></li> 
+    {{ end }}
+</ul>  */}}
+</div>

@@ -1,0 +1,13 @@
+<div class="relative h-72 ">
+  {{ $banner := resources.Get "img/banner1.jpg"  }}
+  <div class="absolute w-full" >
+    <img src="{{ $banner.RelPermalink }}" alt="banner" class="w-full h-60 opacity-70 object-cover">
+  </div>
+  {{ $profile := resources.Get "img/profile.png" }}
+  <div class="absolute left-10 bottom-5">
+    <img src="{{ .Site.Author.avatar }}" alt="avatar" class=" rounded-full w-1/6 border-dashed">
+  </div>
+
+  </div>
+
+  

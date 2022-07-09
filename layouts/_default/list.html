@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{/*  <p>list.html</p>   */}}  
+{{/*  <p>{{.Type}}</p>   */}}
+
+{{ partial "topPart.html" . }}
+
+<div class="px-12">
+  {{ partial "about.html" . }}
+  {{ partial "menu.html" . }}
+  <article class="prose dark:prose-invert pt-10">
+    {{.Content}}
+  </article>
+  {{ partial "listCards.html" . }}
+
+</div>
+
+
+
+
+
+
+{{ end }}

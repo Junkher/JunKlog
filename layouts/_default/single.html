@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{/*  <p>single.html</p>   */}}  
+{{/*  <p>{{ .Type }}</p>  */}}
+
+  <div class="fixed left-0">
+    {{ partial "exitBtn.html" . }}
+  </div>
+
+  {{partial "progressBar.html" . }}
+  
+  {{- if eq .Type "poem" -}} 
+    {{ partial "poem.html" . }} 
+  {{ else -}} 
+    {{ partial "post.html" . }} 
+  {{ end -}}
+  
+
+{{ end }}
