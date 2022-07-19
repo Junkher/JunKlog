@@ -8,7 +8,9 @@ description: "工欲善其事，必先利其器"
 ## Todo
 
 - [ ] 目录页面使选中目录active
+- [ ] 添加Category和Tag机制
 - [ ] 自定义ListCards的图片
+- [ ] LightMode样式适配
 
 ## Why
 
@@ -210,6 +212,17 @@ yarn tailwindcss -i ./assets/css/tw.css -o ./assets/css/out.css --watch
 ```
 hugo server
 ```
+
+
+## Vercel部署
+
+1. 首先push到github仓库
+2. 登录Vercel，导入该仓库
+3. Vercel会自动检测出Hugo模板，点击Deploy即可
+
+**Attention:**
+- 手动设置Vercel的环境变量HUGO_VERSION为本地对应的最新版本
+- config.toml中的`baseURL`设置为Vercel分配的域名，否则无法正确加载css文件
 
 
 ## 可以公开的情报
