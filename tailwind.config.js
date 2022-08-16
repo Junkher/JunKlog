@@ -16,6 +16,23 @@ module.exports = {
         'bermuda': '#78dcca',
         'meme': '#16171d',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            a: {
+              color: '#aaa',
+              '&:hover': {
+                color: '#ccc',
+              },
+            },
+            code: {
+              color: '#C9D1D9',
+              background: 'rgba(110,118,129,0.4)',
+              borderRadius: '3px !important',
+            }
+          },
+        },
+      },
     },
   },
   plugins: [

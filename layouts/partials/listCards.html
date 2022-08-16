@@ -1,17 +1,16 @@
-<div class="min-h-screen flex flex-wrap z-0">
+<div class="grid grid-cols-5 gap-7 ">
 
   {{ range .Pages.ByPublishDate.Reverse }}
 
-    <div class="card w-64 h-80 bg-base-100 shadow-xl mr-7 mt-7">
-
-      <figure class="px-10 pt-10">
-        <img src="https://placeimg.com/400/225/arch" alt="Nothing" class="rounded-xl" />
-      </figure>
+    <div class="rounded-2xl flex flex-col bg-base-100 shadow-xl">
       <a href="{{.RelPermalink}}">
-      <div class="card-body items-center text-center">
-        <h2 class="card-title">{{.Title}}</h2>
-        <p>{{.Description}}</p>
-      </div>
+        <div class="relative pt-[60%] w-[80%] mt-[10%] mx-auto">
+          <img src="{{.Params.cover}}" alt="Nothing" class="absolute top-0 left-0 rounded-xl object-cover w-full h-full" />
+        </div>
+        <div class="p-8 flex flex-col items-center text-center">
+          <h2 class="text-xl leading-7 font-semibold mt-[4%] ">{{.Title}}</h2>
+          <p class="mt-[10%]">{{.Description}}</p>
+        </div>
       </a>
     </div>
   {{ end }}

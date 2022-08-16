@@ -18,19 +18,27 @@ bio = "Tritype-147"
 
 [menu]
     [[menu.main]]
-        url = "/poem"
+        pageref = "/poem/"
+        url = "/poem/"
         name = "Poem"
+        title = "梅花落满了南山"
         weight = 1
     [[menu.main]]
-        url = "/life"
+        pageref = "/life/"
+        url = "/life/"
         name = "Life"
+        title = "生命与生活无关"
         weight = 2
     [[menu.main]]
-        url = "/tech"
+        pageref = "/tech/"
+        url = "/tech/"
         name = "Tech"
+        title = "当美丽的故事来得太晚"
         weight = 3
     [[menu.main]]
-        url = "/about"
+        pageref = "/about/"
+        url = "/about/"
         name = "About"
+        title = "去码头整点薯条"
         weight = 4
 

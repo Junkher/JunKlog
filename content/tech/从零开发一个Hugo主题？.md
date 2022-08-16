@@ -3,13 +3,14 @@ title: 从零开发一个Hugo主题？
 date: 2022-07-09T22:48:50+08:00
 tags: []
 description: "工欲善其事，必先利其器"
+cover: "https://s2.loli.net/2022/07/09/ijfak6GqEnxXFJI.png"
 ---
 
 ## Todo
 
-- [ ] 目录页面使选中目录active
+- [x] 目录页面使选中目录active
 - [ ] 添加Category和Tag机制
-- [ ] 自定义ListCards的图片
+- [x] 自定义ListCards的图片
 - [ ] LightMode样式适配
 
 ## Why
@@ -138,12 +139,12 @@ theme = "hugo-my-theme"
 
 安装tailwindcss
 ```cmd
-yarn add tailwindcss
+pnpm add tailwindcss
 ```
 
 创建tailwind.config.js和postcss.config.js
 ```
-yarn tailwindcss init -p
+pnpm tailwindcss init -p
 ```
 
 修改tailwind.config.js中的content
@@ -189,7 +190,7 @@ module.exports = {
 
 安装插件
 ```
-yarn add @tailwindcss/typography daisyui
+pnpm add @tailwindcss/typography daisyui
 ```
 
 在`tailwind.config.js`加入
@@ -204,14 +205,26 @@ yarn add @tailwindcss/typography daisyui
 ## Dev模式
 
 Tailwind3默认JIT(Just-in-Time)模式，使用`--watch`参数可以实现热部署
-```
-yarn tailwindcss -i ./assets/css/tw.css -o ./assets/css/out.css --watch
+```sh
+pnpm tailwindcss -i ./assets/css/tw.css -o ./assets/css/out.css --watch
 ```
 
 再打开另一终端，启动hugo服务器
-```
+```sh
 hugo server
 ```
+
+### 使用concurrently
+
+在package.json中添加
+```
+  "scripts": {
+    "dev:css": "pnpm tailwindcss -i ./assets/css/tw.css -o ./assets/css/out.css --watch",
+    "dev:server": "hugo server",
+    "dev": "concurrently \"pnpm dev:css\" \"pnpm dev:server\""
+  }
+```
+
 
 
 ## Vercel部署

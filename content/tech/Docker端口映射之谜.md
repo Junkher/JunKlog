@@ -3,7 +3,7 @@ title: Docker端口映射之谜
 date: 2022-07-19T22:58:51+08:00
 tags: []
 description: ""
-draft: true
+draft: "true"
 ---
 
 ## Port Mapping
@@ -29,3 +29,14 @@ $ docker port postgres-server
 ```
 psql -h 127.0.0.1 -p 5437 -U postgres
 ```
+
+
+## restart 和 up&down
+
+实践证明，如果没有改动docker-compose.yml而只是修改配置文件，则可以通过restart使其生效
+
+
+
+##  volume
+
+http://docker.baoshu.red/data_management/volume.html

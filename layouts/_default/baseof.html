@@ -4,8 +4,8 @@
     <body class="bg-white dark:bg-meme text-gray-900 dark:text-slate-200">
         {{ partial "header.html" . }}
         
-        <div id="content">
-        {{- block "main" . }}{{- end }}
+        <div id="content" class="min-h-screen">
+          {{- block "main" . }}{{- end }}
         </div>
 
         {{ partial "footer.html" . }}
@@ -13,5 +13,5 @@
         {{ $script := resources.Get "js/main.js" }}
         <script type="text/javascript" src="{{ $script.RelPermalink }}" ></script>
     
-      </body>
+    </body>
 </html>

@@ -2,7 +2,8 @@
 title: Progress Bar
 date: 2022-07-09T01:55:07+08:00
 tags: []
-description: "如何实现阅读进度条？"
+description: "如何花里胡哨实现阅读进度条？"
+cover: "https://s2.loli.net/2022/07/09/THfrMYiXnzQVCdJ.png"
 ---
 
 ## 基本思路

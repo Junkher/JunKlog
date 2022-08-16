@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "dev:css": "pnpm tailwindcss -i ./assets/css/tw.css -o ./assets/css/out.css --watch",
+    "dev:server": "hugo server",
+    "dev": "concurrently \"pnpm dev:css\" \"pnpm dev:server\""
+  },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.7",
@@ -6,5 +11,10 @@
     "postcss": "^8.4.14",
     "postcss-cli": "^10.0.0",
     "tailwindcss": "^3.1.4"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13"
   }
 }

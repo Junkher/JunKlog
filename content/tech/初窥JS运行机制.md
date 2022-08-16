@@ -3,6 +3,7 @@ title: 初窥JS运行机制
 date: 2022-07-19T22:51:22+08:00
 tags: []
 description: "JavaScript是单线程，通过事件循环机制来处理异步操作"
+cover: "https://s2.loli.net/2022/07/20/wlOdJtpFgi51Wkr.png"
 ---
 
 >JavaScript的主要用途是与用户互动和操作DOM。这决定了它只能是单线程，否则会带来很复杂的同步问题。假设线程A在某个DOM节点上添加内容，而线程B删除了该节点，这就涉及到了竞争问题，需要引入锁机制，导致问题变得复杂。
