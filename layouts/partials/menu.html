@@ -4,7 +4,7 @@
 
         <a href="{{.URL}}"
           title="{{.Title}}"   
-          class="hover:text-slate-300 hover:text-2xl transition-all ease-in-out duration-700 px-2 py-2
+          class="hover:text-slate-300 transition-all ease-in-out duration-700 px-2 py-2
           {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} 
             text-slate-300 border-solid border-b-2 border-slate-300 rounded-sm
           {{ end }}"
