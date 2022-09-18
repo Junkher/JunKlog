@@ -1,17 +1,7 @@
 <head>
-  <title>Demo</title>
+  <title>Life Demo</title>
   {{ $style := resources.Get "css/out.css"}}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
-
-  {{/*  {{ $styles := resources.Get "css/tw.css" }}
-  {{ $styles = $styles | resources.PostCSS }}
-  {{ if  hugo.IsProduction  }}
-      {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
-      {{ else if .Site.IsServer }}
-      {{ $styles = $styles | resources.ExecuteAsTemplate (printf "tailwind.dev.%v.css" now.UnixMilli) .}}
-  {{ end }}
-  <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />  */}}
-
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1607597_jhmihcvh0tm.css" />
 </head>
 

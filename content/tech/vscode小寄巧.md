@@ -47,3 +47,8 @@ draft: true
 ## workspace插件设置
 
 https://github.com/microsoft/vscode/issues/61723
+
+
+## code-server
+
+https://hub.docker.com/r/linuxserver/code-server
