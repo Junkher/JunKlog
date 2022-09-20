@@ -1712,6 +1712,40 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .prose {
   color: var(--tw-prose-body);
   max-width: 65ch;
@@ -1896,6 +1930,9 @@ html {
 .prose :where(img):not(:where([class~="not-prose"] *)) {
   margin-top: 2em;
   margin-bottom: 2em;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .prose :where(figure > *):not(:where([class~="not-prose"] *)) {
@@ -3717,10 +3754,6 @@ html {
   margin-top: 2.5rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -3880,12 +3913,12 @@ html {
   border-radius: 0.125rem;
 }
 
-.rounded-none {
-  border-radius: 0px;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-none {
+  border-radius: 0px;
 }
 
 .rounded-full {

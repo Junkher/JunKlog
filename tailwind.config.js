@@ -29,6 +29,9 @@ module.exports = {
               color: '#C9D1D9',
               background: 'rgba(110,118,129,0.4)',
               borderRadius: '3px !important',
+            },
+            img: {
+              borderRadius: '10px',
             }
           },
         },
