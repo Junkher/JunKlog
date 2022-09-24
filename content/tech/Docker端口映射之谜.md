@@ -66,6 +66,11 @@ the empty
 
 https://stackoverflow.com/questions/42395748/docker-compose-volume-is-empty-even-from-initialize
 
+```
+docker cp nginx_0:/usr/share/nginx/html ./docker-nginx 
+docker cp nginx_0:/etc/nginx ./docker-nginx 
+```
+
 
 ### back_up
 

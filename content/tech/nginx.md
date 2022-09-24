@@ -20,7 +20,6 @@ draft: true
 >而反向代理，则是当client请求某个资源，proxy可能转发给不同的server
 
 
-
 ## directives
 
 ` $remote_addr`获得上游的IP地址，`$proxy_add_x_forwarded_for`获得最初的remote_addr，即真实客户端的IP地址
