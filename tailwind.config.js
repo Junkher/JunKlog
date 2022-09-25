@@ -19,15 +19,22 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-            a: {
-              color: '#aaa',
-              '&:hover': {
-                color: '#ccc',
-              },
+            // a: {
+            //   color: '#aaa',
+            //   '&:hover': {
+            //     color: '#ccc',
+            //   },
+            // },
+
+            hr: {
+              marginTop: '9em'
             },
             code: {
-              color: '#C9D1D9',
-              background: 'rgba(110,118,129,0.4)',
+              // color: '#C9D1D9',
+              '&:dark': {
+                background: 'rgba(110,118,129,0.4)',
+              },
+              background: 'rgba(175,184,193,0.3)',
               borderRadius: '3px !important',
             },
             img: {
@@ -43,4 +50,12 @@ module.exports = {
     require("daisyui"),
   ],
   darkMode: 'class',
+  corePlugins: {
+    preflight: true,
+  },
+  // variants: {
+  //   extend: {
+  //     typography: ['gray']
+  //   }
+  // }
 }

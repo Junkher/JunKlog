@@ -2,7 +2,7 @@
 
   {{ range .Pages.ByPublishDate.Reverse }}
 
-    <div class="rounded-2xl flex flex-col bg-base-100 shadow-xl">
+    <div class="rounded-2xl flex flex-col dark:bg-base-100 bg-white drop-shadow-xl">
       <a href="{{.RelPermalink}}">
         <div class="relative pt-[60%] w-[80%] mt-[10%] mx-auto">
           <img src="{{.Params.cover}}" alt="Nothing" class="absolute top-0 left-0 rounded-xl object-cover w-full h-full" />

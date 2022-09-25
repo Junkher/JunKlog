@@ -11,7 +11,7 @@ cover: "https://s2.loli.net/2022/07/09/ijfak6GqEnxXFJI.png"
 - [x] 目录页面使选中目录active
 - [ ] 添加Category和Tag机制
 - [x] 自定义ListCards的图片
-- [ ] LightMode样式适配
+- [x] LightMode样式适配
 
 ## Why
 
